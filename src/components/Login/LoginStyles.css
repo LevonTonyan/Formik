@@ -1,5 +1,4 @@
-
-.container {
+.login-form-container {
     background-color: rgb(219,219,223);
     width: 350px;
     border-radius: 5px;
@@ -9,8 +8,7 @@
 
 }
 
-.form {
+.login-form {
     width: 300px;
     padding: 20px;
 }
-

@@ -1,10 +1,10 @@
-import { Button, TextField } from "@mui/material";
-import React from "react";
-import "./SigpUpFormStyles.css";
 import { useFormik } from "formik";
+import React from "react";
+import "./LoginStyles.css";
 import * as Yup from "yup";
+import { Button, TextField } from "@mui/material";
 
-const SignUpForm = () => {
+const Login = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -23,11 +23,11 @@ const SignUpForm = () => {
 
     onSubmit: (values) => console.log(values),
   });
- 
+
   return (
-    <div className="container">
-      <form className="form" onSubmit={formik.handleSubmit}>
-        <h1>Sign Up</h1>
+    <div className="login-form-container">
+      <form className="login-form" onSubmit={formik.handleSubmit}>
+        <h1>Log In</h1>
         <TextField
           id="firstName"
           type="text"
@@ -51,29 +51,18 @@ const SignUpForm = () => {
           value={formik.values.lastName}
           onChange={formik.handleChange}
         />
-        <TextField
-          id="email"
-          label="Email"
-          type="text"
-          variant="standard"
-          fullWidth
-          onBlur={formik.handleBlur}
-          error={formik.errors.email && formik.touched.email && true}
-          helperText={formik.touched.email && formik.errors.email }
-          value={formik.values.email}
-          onChange={formik.handleChange}
-        />
+
         <Button
           className="btn"
           sx={{ marginY: 4 }}
           variant="contained"
           type="submit"
         >
-          Sign Up
+          LOGIN
         </Button>
       </form>
     </div>
   );
 };
 
-export default SignUpForm;
+export default Login;
