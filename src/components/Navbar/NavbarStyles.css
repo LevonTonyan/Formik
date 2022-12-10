@@ -1,5 +1,5 @@
 .appbar{
-    background: linear-gradient(90deg, rgba(219,219,223,1) 0%, rgba(101,106,105,1) 0%, rgba(78,209,237,1) 100%);
+    background: linear-gradient(90deg, rgba(219,219,223,1) 0%, rgba(101,106,105,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 
@@ -8,3 +8,8 @@
 
 }
 
+
+.btn-contaner  a{
+    text-decoration: none;
+
+}

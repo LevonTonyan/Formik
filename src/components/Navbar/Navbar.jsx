@@ -14,8 +14,8 @@ const Navbar = () => {
             <img src={logo }  alt=""/>
           </Typography>
           <Box className="btn-contaner">
-            <Link to="/login"><Button color="inherit" className="btn" size="large">Login</Button></Link>
-            <Link to="/signup"><Button color="inherit" className="btn"  size="large">Sign up</Button></Link>
+            <Link to="/login"><Button  sx={{color:"white"}} className="btn" size="large">Login</Button></Link>
+            <Link to="/signup"><Button  sx={{color:"white"}} className="btn"  size="large">Sign up</Button></Link>
           </Box>
           
         </Toolbar>
