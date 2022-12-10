@@ -11,7 +11,7 @@ const Navbar = () => {
       <AppBar position="static" className="appbar">
         <Toolbar>
           <Typography>
-            <img src={logo }  alt=""/>
+            <Link to="/"><img src={logo }  alt=""/></Link>
           </Typography>
           <Box className="btn-contaner">
             <Link to="/login"><Button  sx={{color:"white"}} className="btn" size="large">Login</Button></Link>
