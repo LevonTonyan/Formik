@@ -1,0 +1,12 @@
+
+
+.home-content{
+    background-image: url("../../images/banner.jpg");
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: flex;
+    justify-content: center;
+    align-Items:center;
+}
